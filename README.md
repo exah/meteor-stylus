@@ -1,4 +1,4 @@
-# Stylus for Meteor [![Build Status][travis-img]][travis-url]
+# Stylus for Meteor
 
 [Stylus](http://stylus-lang.com/) is a CSS pre-processor with a
 simple syntax and expressive dynamic behaviour. It allows for more compact
@@ -28,43 +28,6 @@ its path by `/`.
 
 Expressive, dynamic, robust CSS. Curly braces and semicolons: optional.
 
-### [Nib](http://tj.github.io/nib/) 1.1.0
-
-Nib is a popular Stylus package that adds many helpful, basic, utility mixins.
-
-### [Jeet](http://jeet.gs/) 6.1.2
-
-An advanced -- yet intuitive -- grid system. Very capable, and useful for laying
-out a page without cluttering up HTML with grid classes.
-
-It's important to remember to include it in your styles, like so:
-
-```
-@import 'jeet'
-```
-
-### [Rupture](http://jenius.github.io/rupture/) 0.6.1
-
-Simple media queries for Stylus. Must be imported before use.
-
-### [Typographic](https://github.com/corysimmons/typographic) 2.9.3
-
-Quick and dirty responsive typography for the rest of us. Offers great selection
-of common font stacks, and several ways to apply them to your document. Must be
-imported before use.
-
-### [Axis](http://axis.netlify.com/) 0.3.2
-
-A higher-level Stylus mixin library with lots of extra functionality. Be sure
-not to miss the normalize() mixin. Axis uses and imports Nib, so Nib has been
-removed from this package. This might not require an import statement.
-
-### [Autoprefixer](https://github.com/jenius/autoprefixer-stylus) 0.6.0
-
-An autoprefixer plugin for Stylus. Will also remove unnecessary prefixes if
-there is widespread browser support. It is automatic and does not need to be
-imported.
-
 ## Compatibility
 
 The package should be fully compatible with Meteor 0.9.
@@ -92,6 +55,3 @@ To test, run:
 ```
 meteor test-packages ./
 ```
-
-[travis-img]: http://img.shields.io/travis/mquandalle/meteor-stylus.svg
-[travis-url]: https://travis-ci.org/mquandalle/meteor-stylus)

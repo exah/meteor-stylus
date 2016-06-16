@@ -1,3 +1,6 @@
+## v2.0.0
+* Remove all stylus plugins (use node_modules/postcss plugins instead)
+
 ## v1.1.1
 
 * Bump Stylus version (from 0.50.0 to 0.51.1)

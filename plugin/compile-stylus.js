@@ -1,23 +1,11 @@
 var fs = Npm.require('fs');
 var stylus = Npm.require('stylus');
-var nib = Npm.require('nib');
-var jeet = Npm.require('jeet');
-var rupture = Npm.require('rupture');
-var path = Npm.require('path');
-var axis = Npm.require('axis');
-var typographic = Npm.require('typographic');
-var autoprefixer = Npm.require('autoprefixer-stylus');
 var Future = Npm.require('fibers/future');
+var path = Npm.require('path');
 
 Plugin.registerSourceHandler("styl", {archMatching: 'web'}, function (compileStep) {
   var source = compileStep.read().toString('utf8');
   var compiler = stylus(source)
-    .use(nib())
-    .use(jeet())
-    .use(rupture())
-    .use(axis())
-    .use(typographic())
-    .use(autoprefixer())
     .set('filename', compileStep.inputPath)
     .set('sourcemap', {comment: false})
     .include(path.dirname(compileStep._fullInputPath)) // relative @import
