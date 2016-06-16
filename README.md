@@ -1,4 +1,6 @@
-# Stylus for Meteor
+# Stylus for Meteor (clean)
+
+This package is forked from [mquandalle/meteor-stylus](https://github.com/mquandalle/meteor-stylus), with updated Stylus package and removed plugins.
 
 [Stylus](http://stylus-lang.com/) is a CSS pre-processor with a
 simple syntax and expressive dynamic behaviour. It allows for more compact
