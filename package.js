@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Expressive, dynamic, robust CSS",
-  name: "mquandalle:stylus",
-  version: "1.1.1",
-  git: "https://github.com/mquandalle/meteor-stylus.git"
+  name: "exah:stylus",
+  version: "2.0.0",
+  git: "https://github.com/exah/meteor-stylus.git"
 });
 
 Package._transitional_registerBuildPlugin({
@@ -12,7 +12,7 @@ Package._transitional_registerBuildPlugin({
     'plugin/compile-stylus.js'
   ],
   npmDependencies: {
-    stylus: "0.51.1",
+    stylus: "0.54.5",
   }
 });
 

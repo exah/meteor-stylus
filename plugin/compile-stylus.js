@@ -8,8 +8,10 @@ Plugin.registerSourceHandler("styl", {archMatching: 'web'}, function (compileSte
   var compiler = stylus(source)
     .set('filename', compileStep.inputPath)
     .set('sourcemap', {comment: false})
+    .set('includeCSS', true)
     .include(path.dirname(compileStep._fullInputPath)) // relative @import
-    .include(process.cwd()); // absolute @import
+    .include(process.cwd()) // absolute @import
+    .include(process.cwd() + '/node_modules'); // node_modules @import
 
   var errCb = function(msg) {
     compileStep.error({

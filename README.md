@@ -24,7 +24,7 @@ its path by `/`.
 
 ## Included packages
 
-### [Stylus](http://stylus-lang.com/) 0.51.1
+### [Stylus](http://stylus-lang.com/) 0.54.5
 
 Expressive, dynamic, robust CSS. Curly braces and semicolons: optional.
 
